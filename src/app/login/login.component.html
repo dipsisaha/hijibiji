@@ -1,0 +1,42 @@
+<div class="login">
+	<div class="row loginsection">
+		<div class="col-7 leftPanel">			 			
+		</div>
+		<div class="col-3.5 middlePanel">
+			<form #loginForm="ngForm" class="loginform">
+				<div class="headertxt">
+			      Asset Tracking<br/>Powered by Blockchain
+			    </div>
+			    <br/>
+			    <div class="signintxt">
+			    	Sign In
+			    </div>
+			    <div class="usernamesection">
+			      <div class="username">
+			        Username
+			      </div>
+				  <input type="text" #name="ngModel" [class.is-invalid]="name.invalid && name.touched" [(ngModel)]="model.username" class="inputbg black" name="username" required>
+				  <p class="invalid" [class.d-none]="name.valid || name.untouched">Username cannot be Blank</p>			      
+			    </div>
+			    <br/>
+			    <div class="passwordsection">
+			      <div class="password">
+			        Password
+			      </div>
+				  <input type="password" #pwd="ngModel" [class.is-invalid]="pwd.invalid && pwd.touched" [(ngModel)]="model.password" class="inputbg black" name="password" required>
+				  <small class="invalid" [class.d-none]="pwd.valid || pwd.untouched">Password cannot be Blank</small>			      
+			    </div>
+			    <br/>
+		    	<div class="loginbtn text-center">
+		      		<button [disabled]="loginForm.form.invalid" [ngClass]="loginForm.form.invalid ?'diabled-class':'btnbg'"  (click)="login();">LOGIN</button>
+				</div>
+				<br/>
+				<div class="text-center forgotlink">
+					Forgot Password
+				</div>
+			</form>
+		</div>
+		<div class="col-1 rightPanel">
+		</div>
+	</div>
+</div>

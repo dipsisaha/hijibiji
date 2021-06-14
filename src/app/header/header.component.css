@@ -1,0 +1,43 @@
+.navbar-custom {
+    color: #CC3333;
+    background-color: #9132a8;
+    }
+ 
+ .btn-space {
+    margin-right: 10px;
+}
+.navbar-brand{
+	color: #42f5c8;
+	font-size: 30px;
+	font-family: "candara";
+ 
+}
+/* a:hover {
+  background-color: #ebd234;
+} */
+a{
+	font-size: 18px;
+}
+.nav-link{
+	color: #FFFFFF;
+}
+.bg-black{
+background: #1a001a ;
+}
+.logo {
+    float: left;
+    height: 150px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-collapse {
+    padding-right: 15px;
+padding-left: 30%;
+}
+.nav-item{
+    margin: 0 15px 0 9px;
+}
+.active{
+    border-bottom: 1px solid white;
+}

@@ -1,0 +1,16 @@
+<nav *ngIf="showNavbar">
+    <div  class="header_bar row align-items-center justify-content-between">
+        <div class="col-6">          
+        </div>
+        <div class="col-6 text-right"> 
+        	<div>
+        		<span class="mr-4 username">{{userName}}</span>
+        		<span class="ml-4 logout pointer mr-4"><a (click)="logout(currentOrg.logout)">Log out</a></span>
+        	</div>       	          
+        </div>
+    </div>
+    <div class="clear"></div>
+</nav>
+
+
+
